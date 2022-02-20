@@ -8,6 +8,9 @@ def MenuOpcions():
     print("1- VERIFICAR NOMBRES PRIMERS ")
     print("2- DIBUIXAR UN TAULELL D'ESCACS")
     print("3- CÀLCUL CONSUM")
+    print("7- JOC D'ENDEVINA EL NUMERO")
+    print("8- CONVERSOR FARENHEIT-CELCIUS")
+    print("9- VALIDADOR DE DATA")
 
 #MAIN
 MenuOpcions()
@@ -25,6 +28,12 @@ while (tria != '0'):
         OrdenarNumeros()
     elif (tria == '6'):
         CalculadorsBasica()
+    elif (tria == '7'):
+        JocEndevinaNumero()
+    elif (tria == '8'):
+        ConversorFarenheitCelcius()
+    elif (tria == '9'):
+        ValidaData()
     else: 
         print("ERROR")
         sleep(1)
