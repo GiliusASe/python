@@ -29,3 +29,22 @@ def OrdenarNumeros():
     num = num1,num2,num3
 
     print(sorted(num))
+
+def CalculadoraBasica():
+    
+    num1 = float(input("Numero 1:"))
+    print("Numero 2:")
+    num2 = input()
+    num2 = float(num2)
+    operador = input("Tria l'operador:")
+
+    if operador=="+":
+        print(num1 + num2)
+    elif operador=='-':
+        print(num1 - num2)
+    elif operador=='*':
+        print(num1 * num2)
+    elif operador=='/' and num2 != 0:
+        print(num1 / num2)
+    else:
+        print ("Introdueix l'operador")
