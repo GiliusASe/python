@@ -91,6 +91,12 @@ while (tria != '0'):
         ConversorFarenheitCelcius()
     elif (tria == '9'):
         ValidaData()
+    elif (tria == '10'):
+        ValidaData()
+    elif (tria == '11'):
+        ValidaData()
+    elif (tria == '12'):
+        ValidaData()
     else: 
         print("ERROR")
         sleep(1)
