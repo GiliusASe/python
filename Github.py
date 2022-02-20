@@ -1,4 +1,5 @@
 #DECLARACIÓ DE FUNCIONS
+import random as rnd
 from os import *
 from time import sleep
 
@@ -11,6 +12,22 @@ def MenuOpcions():
     print("7- JOC D'ENDEVINA EL NUMERO")
     print("8- CONVERSOR FARENHEIT-CELCIUS")
     print("9- VALIDADOR DE DATA")
+
+#Joc d'endevinar un numero amb pistes de si es mes alt o mes baix
+def JocEndevinaNumero():
+    numeroAleatori= rnd.randint(0, 10)
+
+    numeroIntroduit = int(input("Introdueix un número: "))
+
+    while numeroIntroduit != numeroAleatori:
+        if numeroIntroduit > numeroAleatori:
+            print("Intenta amb un nombre MÉS PETIT")
+            numeroIntroduit= int(input("Introdueix un altre número: "))
+        else :
+            print("Intenta amb un nombre MÉS GRAN")
+            numeroIntroduit= int(input("Introdueix un altre número: ")) 
+    if numeroIntroduit == numeroAleatori:
+        print("Has endevinat el número")
 
 #MAIN
 MenuOpcions()
