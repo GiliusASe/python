@@ -5,6 +5,7 @@ from time import sleep
 from tkinter import *
 import sys
 from tkinter.constants import PROJECTING
+import msvcrt 
 
 
 def MenuOpcions():
@@ -299,7 +300,8 @@ while (tria != '0'):
         sleep(1)
         
     #RETORN AL MENÚ
-    print("TORNANT AL MENÚ PRINCIPAL")
+    print("TORNANT AL MENÚ PRINCIPAL, APRETA QUALSEVOL TECLA PER A CONTINUAR")
+    s = msvcrt.getch()
     #NETEJA DE PANTALLA
     sleep(0.7)
     system('cls')
