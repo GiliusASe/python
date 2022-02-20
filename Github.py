@@ -229,7 +229,7 @@ while (tria != '0'):
     elif (tria == '5'):
         OrdenarNumeros()
     elif (tria == '6'):
-        CalculadorsBasica()
+        CalculadoraBasica()
     elif (tria == '7'):
         JocEndevinaNumero()
     elif (tria == '8'):
