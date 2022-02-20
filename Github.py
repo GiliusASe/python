@@ -19,3 +19,13 @@ def DiesPassats():
 
     diesTotals = diesPassats + mesosPassats + anysPassats
     print ("Han passat:", diesTotals, "dies")
+    
+def OrdenarNumeros():
+    
+    num1 = int(float(input("Intrdueix el primer numero:")))
+    num2 = int(float(input("Intrdueix el segon numero:")))
+    num3 = int(float(input("Intrdueix el tercer numero:")))
+
+    num = num1,num2,num3
+
+    print(sorted(num))
