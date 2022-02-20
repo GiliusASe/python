@@ -162,45 +162,6 @@ def CalculConsum():
     else:
         print("Arribaràs al teu destí")
 
-#MAIN
-MenuOpcions()
-tria = input("ESCULL UNA OPCIÓ: ")
-while (tria != '0'):
-    if (tria == '1'):
-        NombresPrimers()
-    elif (tria == '2'):
-        TaulellEscacs()
-    elif (tria == '3'):
-        CalculConsum()
-    elif (tria == '4'):
-        DiesPassats()
-    elif (tria == '5'):
-        OrdenarNumeros()
-    elif (tria == '6'):
-        CalculadorsBasica()
-    elif (tria == '7'):
-        JocEndevinaNumero()
-    elif (tria == '8'):
-        ConversorFarenheitCelcius()
-    elif (tria == '9'):
-        ValidaData()
-    elif (tria == '10'):
-        AreaTriangle()
-    elif (tria == '11'):
-        DiesPassats()
-    elif (tria == '12'):
-        CalculOperacio()
-    else: 
-        print("ERROR")
-        sleep(1)
-        
-    #RETORN AL MENÚ
-    print("TORNANT AL MENÚ PRINCIPAL")
-    #NETEJA DE PANTALLA
-    sleep(0.7)
-    system('cls')
-    #TRIA D'OPCIÓ
-    tria = input("ESCULL UNA OPCIÓ: ")
 
 def DiesPassats():
 
@@ -252,3 +213,45 @@ def CalculadoraBasica():
         print(num1 / num2)
     else:
         print ("Introdueix l'operador")
+
+#MAIN
+MenuOpcions()
+tria = input("ESCULL UNA OPCIÓ: ")
+while (tria != '0'):
+    if (tria == '1'):
+        NombresPrimers()
+    elif (tria == '2'):
+        TaulellEscacs()
+    elif (tria == '3'):
+        CalculConsum()
+    elif (tria == '4'):
+        DiesPassats()
+    elif (tria == '5'):
+        OrdenarNumeros()
+    elif (tria == '6'):
+        CalculadorsBasica()
+    elif (tria == '7'):
+        JocEndevinaNumero()
+    elif (tria == '8'):
+        ConversorFarenheitCelcius()
+    elif (tria == '9'):
+        ValidaData()
+    elif (tria == '10'):
+        AreaTriangle()
+    elif (tria == '11'):
+        DiesPassats()
+    elif (tria == '12'):
+        CalculOperacio()
+    else: 
+        print("ERROR")
+        sleep(1)
+        
+    #RETORN AL MENÚ
+    print("TORNANT AL MENÚ PRINCIPAL")
+    #NETEJA DE PANTALLA
+    sleep(0.7)
+    system('cls')
+    #TRIA D'OPCIÓ
+    tria = input("ESCULL UNA OPCIÓ: ")
+
+
