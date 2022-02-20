@@ -10,26 +10,19 @@ def AreaTriangle():
 
     print("L'àrea del triangle es ", area2, "i el seu perimetre es ", perimetre)
 
-def DiesPassats():
+def TipusTriangle():
     
-    import datetime
-    datanaixementdia = int(input("Dia en el que vas nèixer:"))
-    datanaixementmes = int(input("Mes de naixement:"))
-    datanaixementany = int(input("Any de naixement:"))
+    costat1 = float(input("Inserta el primer costat del triangle: "))
+    costat2 = float(input("Inserta el segon costat del triangle: "))
+    costat3 = float(input("Inserta el tercer costat del triangle: "))
 
-    dataActual = datetime.date.today()
-    #print(dataActual)
-    #print(type.dataActual)
-
-    print("dia", dataActual.day, "mes", dataActual.month, "any", dataActual.year)
-
-    diespassats = dataActual.day - datanaixementdia
-    mesospassats = dataActual.month - datanaixementmes
-    anyspassats = dataActual.year - datanaixementany
-
-    resultatfinal = diespassats + mesospassats*30 + anyspassats*360
-
-    print("des de que vas nèixer, han passat", resultatfinal, "dies.")
+    if costat1 == costat2 and costat2 == costat3:
+        print("Aquest triangle és equilàter")
+    else:
+        if costat1 == costat2 or costat2 == costat3 or costat1 == costat3:
+            print("Aquest triangle és iscòceles")
+        else:
+            print("Aquest triangle és escalè") 
     
 def CalculOperacio():
     
