@@ -2,6 +2,8 @@
 import random as rnd
 from os import *
 from time import sleep
+from tkinter import *
+from tkinter.constants import PROJECTING
 
 def MenuOpcions():
     print("MENÚ D'OPCIONS:")
@@ -41,6 +43,28 @@ def ConversorFarenheitCelcius():
         print("La tempreratura anterior en farenheit es ", temperatura)
     else:
         print("Error parametre no valid")
+
+
+#Funcio que valida una data format dd/mm/yyyy
+def ValidaData():
+    data = input("Entri una data format dd/mm/aaaa    ")
+    dia = int(data[0] + data[1])
+    mes = int(data[3] + data[4])
+    any = int(data[6] + data[7] + data[8] + data[9])
+    anyPart1 = any / 100
+    anyPart2 = any % 100
+    if ((anyPart1 % 4 == 0 or anyPart2 % 4 == 0) and anyPart2 != 0) and mes == 2 and dia > 29:
+        print("l'any es errori")
+    elif  mes == 2 and dia > 28:
+        print("l'any es erroni")
+    elif mes >= 4 and mes % 2 == 0 and dia > 30:
+        print("l'any es erroni")
+    elif mes % 2 != 0 and dia > 31:
+        print("l'any es erroni")
+    elif mes > 12 and mes < 1:
+        print("l'any es erroni")
+    else:
+        print("l'any es correcte")
 
 #MAIN
 MenuOpcions()
