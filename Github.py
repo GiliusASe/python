@@ -2,7 +2,7 @@ def MenuOpcions():
     print("MENÚ D'OPCIONS:")
     print("1- VERIFICAR NOMBRES PRIMERS ")
     print("2- DIBUIXAR UN TAULELL D'ESCACS")
-    print("3- CÀLCUL CONSUM")
+    print("3- ARRIBARÀS AL DESTÍ?")
 
 def NombresPrimers():
     print("EXECUTANT VERIFICADOR DE NOBRES PRIMERS:")
@@ -74,3 +74,16 @@ def TaulellEscacs():
 
 
     fin.mainloop()
+
+def CalculConsum():
+    consum = (float(input("Introdueix el consum mitjà del teu vehicle: ")))
+    dipòsit = (float(input("Introdueix els litres restants dins el teu dipòsit: ")))
+    distanciaDestí = (float(input("Introdueix la distància entre el punt d'inici i el destí: ")))
+
+    r = dipòsit / consum
+
+    if r > distanciaDestí:
+        print("No arribaràs al teu destí")
+
+    else:
+        print("Arribaràs al teu destí")
