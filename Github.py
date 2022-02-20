@@ -29,6 +29,19 @@ def JocEndevinaNumero():
     if numeroIntroduit == numeroAleatori:
         print("Has endevinat el número")
 
+#Conversor Celcius-Farenheit
+def ConversorFarenheitCelcius():
+    tipus = input("Introdueixi si introduira Farenheit(f) o Celcius(c) > ")
+    temperatura = int(input("introdueix la tempreratura"))
+    if tipus == "f":
+        temperatura = (temperatura - 32) / 1.8000
+        print("La tempreratura anterior en celcius es ", temperatura)
+    elif tipus == "c":
+        temperatura = (temperatura * 1.8000) + 32
+        print("La tempreratura anterior en farenheit es ", temperatura)
+    else:
+        print("Error parametre no valid")
+
 #MAIN
 MenuOpcions()
 tria = input("ESCULL UNA OPCIÓ: ")
