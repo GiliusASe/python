@@ -19,6 +19,12 @@ while (tria != '0'):
         TaulellEscacs()
     elif (tria == '3'):
         CalculConsum()
+    elif (tria == '4'):
+        DiesPassats()
+    elif (tria == '4'):
+        OrdenarNumeros()
+    elif (tria == '4'):
+        CalculadorsBasica()
     else: 
         print("ERROR")
         sleep(1)
