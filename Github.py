@@ -21,9 +21,9 @@ while (tria != '0'):
         CalculConsum()
     elif (tria == '4'):
         DiesPassats()
-    elif (tria == '4'):
+    elif (tria == '5'):
         OrdenarNumeros()
-    elif (tria == '4'):
+    elif (tria == '6'):
         CalculadorsBasica()
     else: 
         print("ERROR")
