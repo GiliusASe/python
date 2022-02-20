@@ -1,5 +1,7 @@
-
 #DECLARACIÓ DE LES FUNCIONS
+from os import *
+import sys
+from time import sleep
 
 def MenuOpcions():
     print("MENÚ D'OPCIONS:")
@@ -10,6 +12,7 @@ def MenuOpcions():
 
 
 def NombresPrimers():
+    system('cls')
     print("EXECUTANT VERIFICADOR DE NOBRES PRIMERS:")
     primer = True
     divisor = 2
@@ -25,6 +28,7 @@ def NombresPrimers():
     else:print("EL NOMBRE ",numero," NO ÉS PRIMER")
 
 def TaulellEscacs():
+    system('cls')
     from tkinter import Tk, Canvas
 
     fin = Tk()
@@ -81,6 +85,7 @@ def TaulellEscacs():
     fin.mainloop()
 
 def CalculConsum():
+    system('cls')
     consum = (float(input("Introdueix el consum mitjà del teu vehicle: ")))
     dipòsit = (float(input("Introdueix els litres restants dins el teu dipòsit: ")))
     distanciaDestí = (float(input("Introdueix la distància entre el punt d'inici i el destí: ")))
@@ -104,9 +109,17 @@ while (tria != '0'):
     elif (tria == '3'):
         CalculConsum()
     else: 
-        print("ERROR, torna a intentar;")
-    print("TORNANT AL MENÚ")
+        print("ERROR")
+        sleep(1)
+        
+    #RETORN AL MENÚ
+    print("TORNANT AL MENÚ PRINCIPAL")
+    #NETEJA DE PANTALLA
+    sleep(0.7)
+    system('cls')
+    #TRIA D'OPCIÓ
     tria = input("ESCULL UNA OPCIÓ: ")
+
 
     
     
