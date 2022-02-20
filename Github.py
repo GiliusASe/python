@@ -1,8 +1,13 @@
+
+#DECLARACIÓ DE LES FUNCIONS
+
 def MenuOpcions():
     print("MENÚ D'OPCIONS:")
+    print("0- SORTIR DEL PROGRAMA")
     print("1- VERIFICAR NOMBRES PRIMERS ")
     print("2- DIBUIXAR UN TAULELL D'ESCACS")
     print("3- ARRIBARÀS AL DESTÍ?")
+
 
 def NombresPrimers():
     print("EXECUTANT VERIFICADOR DE NOBRES PRIMERS:")
@@ -87,3 +92,21 @@ def CalculConsum():
 
     else:
         print("Arribaràs al teu destí")
+
+#MAIN
+MenuOpcions()
+tria = input("ESCULL UNA OPCIÓ: ")
+while (tria != '0'):
+    if (tria == '1'):
+        NombresPrimers()
+    elif (tria == '2'):
+        TaulellEscacs()
+    elif (tria == '3'):
+        CalculConsum()
+    else: 
+        print("ERROR, torna a intentar;")
+    print("TORNANT AL MENÚ")
+    tria = input("ESCULL UNA OPCIÓ: ")
+
+    
+    
