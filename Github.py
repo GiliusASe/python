@@ -239,7 +239,7 @@ while (tria != '0'):
     elif (tria == '10'):
         AreaTriangle()
     elif (tria == '11'):
-        DiesPassats()
+        TipusTriangle()
     elif (tria == '12'):
         CalculOperacio()
     else: 
