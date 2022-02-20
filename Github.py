@@ -92,11 +92,11 @@ while (tria != '0'):
     elif (tria == '9'):
         ValidaData()
     elif (tria == '10'):
-        ValidaData()
+        AreaTriangle()
     elif (tria == '11'):
-        ValidaData()
+        DiesPassats()
     elif (tria == '12'):
-        ValidaData()
+        CalculOperacio()
     else: 
         print("ERROR")
         sleep(1)
