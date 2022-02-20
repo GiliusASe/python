@@ -14,6 +14,9 @@ def MenuOpcions():
     print("7- JOC D'ENDEVINA EL NUMERO")
     print("8- CONVERSOR FARENHEIT-CELCIUS")
     print("9- VALIDADOR DE DATA")
+    print("10- AREA D'UN TRIANGLE")
+    print("11- DIES QUE VAN PASSAR DESDE QUE VAS NEIXER")
+    print("12- CALCUL D'OPERACIONS")
 
 #Joc d'endevinar un numero amb pistes de si es mes alt o mes baix
 def JocEndevinaNumero():
